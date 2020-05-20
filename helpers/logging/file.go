@@ -3,7 +3,8 @@ package logging
 import (
 	"fmt"
 	"time"
-	"server/helpers/setting"
+
+	"github.com/br-invin89/goknack-v2/server/helpers/setting"
 )
 
 func getLogFilePath() string {

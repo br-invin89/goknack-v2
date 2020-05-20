@@ -1,8 +1,9 @@
 package services
 
 import (
-	models "server/models"
 	"time"
+
+	models "github.com/br-invin89/goknack-v2/server/models"
 
 	"github.com/labstack/echo"
 	"gopkg.in/mgo.v2/bson"

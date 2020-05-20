@@ -1,9 +1,9 @@
 package main
 
 import (
-	setting "server/helpers/setting"
-	models "server/models"
-	routes "server/routes"
+	setting "github.com/br-invin89/goknack-v2/server/helpers/setting"
+	models "github.com/br-invin89/goknack-v2/server/models"
+	routes "github.com/br-invin89/goknack-v2/server/routes"
 	//"server/helpers/logging"
 )
 

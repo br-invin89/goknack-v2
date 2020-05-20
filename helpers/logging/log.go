@@ -2,11 +2,12 @@ package logging
 
 import (
 	"fmt"
-	"server/logging/file"
-	log "github.com/sirupsen/logrus"
 	"os"
 	"path/filepath"
 	"runtime"
+
+	"github.com/br-invin89/goknack-v2/server/helpers/file"
+	log "github.com/sirupsen/logrus"
 )
 
 type Level int
@@ -40,7 +41,7 @@ func Setup() {
 		log.Fatalf("logging.Setup err: %v", err)
 	}
 
-	logger = log.New(F, DefaultPrefix, log.LstdFlags)
+	// logger = log.New(F, DefaultPrefix, log.LstdFlags)
 }
 
 func Debug(v ...interface{}) {
@@ -76,7 +77,5 @@ func setPrefix(level Level) {
 		logPrefix = fmt.Sprintf("[%s]", levelFlags[level])
 	}
 
-	logger.SetPrefix(logPrefix)
+	// logger.SetPrefix(logPrefix)
 }
-
-

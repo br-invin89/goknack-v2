@@ -8,10 +8,10 @@ import (
 	"path"
 	"strings"
 
-	"server/helpers/file"
-	"server/helpers/logging"
-	"server/helpers/setting"
-	"server/helpers/util"
+	"github.com/br-invin89/goknack-v2/server/helpers/file"
+	"github.com/br-invin89/goknack-v2/server/helpers/logging"
+	"github.com/br-invin89/goknack-v2/server/helpers/setting"
+	"github.com/br-invin89/goknack-v2/server/helpers/util"
 )
 
 func GetImageFullUrl(name string) string {
